@@ -2,12 +2,12 @@ package ru.netology
 
 data class Post(
 
-    val id: Int,
+    val id: Int? = null,
     val ownerId: Int = 0,
     val fromId: Int = 0,
     val createdBy: Int = 0,
     val date: Int = 0,
-    val text: String = " ",
+    val text: String? = null, //может быть null
     val replyOwnerId: Int = 0,
     val replyPostId: Int = 0,
     val friendsOnly: Int = 0,
